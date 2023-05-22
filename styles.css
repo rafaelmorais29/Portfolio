@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #FFDEAD;
+    --cor-secundaria: #000000;
+    --cor-terciaria: #2F4F4F;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    /* background-color: #22d4fd; */
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: #f8c67b;
+}
+
+.apresentacao__imagem {
+    width: 40%;
+    border-radius: 15%;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
+
+.apresentacao__conteudo__subtitulo {
+    font-size: 26px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__links__subtitulo {
+    font-size: 16px;
+    font-family: var(--fonte-primaria);
+}
+
+.link__nome {
+    text-decoration: none;
+    color: #FFDEAD;
+}
+
+.logo__escola {
+    width: 15em;
+}
+
+.habilidades{
+    font-size: 20px;
+    padding: 4em 0 0 0;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+}
+
+       
+.habilidades__python__logo{
+    height: 2em;
+}
+
+.habilidades__html {
+
+}
+
+.habilidades__html__logo{
+    height: 2em;
+}
+
+.habilidades__css__logo{
+    height: 2em;
+}
+
+.habilidades__javascript__logo{
+    height: 2em;
+}
+
+.botao{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    border: 2px solid var(--cor-terciaria);
+    width: 20%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    margin: 2em 0;
+}
+
+.botao:hover{
+    background-color: #f8c67b;
+}
+
+.meusprojetos{
+    margin: 2em 0;
+}
+
+.clique{
+    margin: 2em 0;
+}
+
+.videoplay{
+    height: 25em;
+}
+
+.video{
+    height: 20em;
+}
+
+.titulo__video{
+    margin: 1em 0 0 8em;
+    font-family: var(--fonte-secundaria);
+}
+
+
+.titulo{
+    margin: 5em 28px;
+    font-family: var(--fonte-primaria);
+}
+
+.rodape__curriculo{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.rafilo{
+    height: 18%;
+    width: 15%;
+    border-radius: 15%;
+    padding-right: 18px;
+}
+
+.final{
+    padding: 1em 0;
+}
+
+.apresentacao__conteudo2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+}
